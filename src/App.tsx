@@ -54,7 +54,10 @@ export const App: React.FC = () => {
                 setQuery={setQuery}
                 statusFilter={statusFilter}
                 setStatusFilter={setStatusFilter}
-                resetFilter={() => setQuery('')}
+                resetFilter={() => {
+                  setQuery('');
+                  setStatusFilter('all');
+                }}
               />
             </div>
 
